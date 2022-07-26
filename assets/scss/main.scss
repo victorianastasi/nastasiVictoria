@@ -1,0 +1,585 @@
+@import "styles";
+
+body{
+    background-color: $blanco;
+    color: $grisulado90;
+    @include format-text($font-primary, $medium, 400);
+}
+.navbar.navbar-light {
+    border-bottom: none;
+    box-shadow: 0px 1px 3px #00000029;
+    .header-logo {
+        width: inherit;
+    }
+    .navbar-search:not(.active-search) {
+        .input-search {
+            box-shadow: none; 
+        }
+    }
+}
+.headerCovid{
+    background-color: $grisulado1;
+    height: 700px;
+    .breadcrumb{
+        margin-bottom: 0.5rem;
+    }
+    .headerCovid__update{
+        font-size: $x-small;
+        text-transform: uppercase;
+        letter-spacing: 0.03px; 
+    }
+    .headerCovid__title{
+        @include format-text($font-titles, $xxl, bold);
+        letter-spacing: -0.07px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .headerCovid__subtitle{
+        font-size: $m-large;
+        letter-spacing: -0.02px;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    .headerCovid__cards{
+        .card{
+            border-left: 8px solid $amarillo40;
+            box-shadow: 0px 1px 3px $grayBorders;
+            .card-body{
+                padding: 1.35rem 1rem;
+                .card-title{
+                    font-size: $large;
+                }
+                .card-text--desktop{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.consulta{
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    .consulta__container{
+        height: 735px;
+        background-color: $verdeAgua10;
+        border-radius: 0px;
+        padding: 1.5rem 0.75rem;
+        background-image: url("../../img/phone-img.png");
+        background-repeat: no-repeat;
+        background-position: 60% 140%;
+        form{
+            width: 100%;
+            legend{
+                @include format-text($font-primary, 1.5rem, 600);
+            }
+            .consulta__text{
+                width: 100%;
+                margin-bottom: 1rem;
+                font-size: $m-large;
+                @include format-text($font-primary, $medium, 400);
+            }
+            .form-wrapper{
+                width: 300px;
+                margin-right: 1rem;
+                .form-control{
+                    background-color: $blanco;
+                    border-radius: 4px;
+                    box-shadow: none;
+                }
+            }
+            .contsulta__btn__container{
+                margin-top: 1.5rem;
+                width: 110px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                .consulta__btn{
+                    font-weight: 700;
+                    padding: 0;
+                    position: relative;
+                    height: 48px;
+                    width: 110px;
+                    transition: all 300ms;
+                    &:before{
+                        content: 'Consultar';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    &:hover{
+                        width: 84px;
+                        &:before{
+                            content: 'Botón';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.servicios{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    h3{
+        @include principal-titles();
+    }
+    .servicios__card{
+        .card-icon{
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            img{
+                margin-bottom: 0.75rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            font-size: $large;
+            letter-spacing: -0.02px;
+        }
+    }
+}
+.escuelas{
+    .card{
+        border: 2px solid $grisulado5;
+        box-shadow: none;
+        h4{
+            font-size: $large;
+        }
+    }
+}
+.propuestas{
+    .card{
+        background-color: $grisulado1;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        .card-body{
+            padding: 1.5rem;
+            a{
+                font-size: $large;
+                letter-spacing: -0.02px;
+            }
+        }  
+    }
+}
+.informacion{
+    background-color: $grisulado1;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .container{
+        h3{
+            @include principal-titles();
+        }
+        p{
+            letter-spacing: -0.02px;
+            width: 90%;
+        }
+        .btn-wrapper{
+            .btn{
+                border-radius: 0.25rem;
+                margin-bottom: 0.75rem;
+            }
+        }
+    }
+}
+.prevencion-sintomas{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: start;
+    color: $grisulado90;
+    margin-bottom: 2rem;
+    div{
+        margin-top: 2rem;
+        flex-basis: 100%;
+        h3{
+            @include  principal-titles();
+        }
+        .prevencion-sintomas__subtitle{
+            font-size: $m-large;
+            letter-spacing: -0.02px;
+            margin-bottom: 1.5rem;
+        }
+        .btn{
+            @include format-text($font-primary, $medium, 600);
+            font-size: $medium;
+            border-radius: 0.25rem;
+            padding: 0.5rem 1.5rem;
+        }
+        ul{
+            list-style: none;
+            width: 100%;
+            padding-left: 0.5rem;
+            li{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: start;
+                margin: 1.5rem 0;
+                h5{
+                    @include format-text($font-titles, $medium*1.058, 600);
+                }      
+            }
+        }
+        a{
+            display: block;
+            padding-left: 0.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.informacion-oficial{
+    background-color: $grisulado1;
+    .container{
+        text-align: center;
+        h6{
+            @include format-text($font-titles, $medium*1.058, 700);
+            letter-spacing: -0.02px;
+        }
+        .informacion-oficial__links{
+            padding-top: 1rem;
+            a{
+                display: block;
+                text-align: left;
+                padding: 1rem;
+                text-decoration: none;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.main-footer{
+    padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    .telefonos-redes{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1.5px solid $blanco;
+        .telefonos-redes__section{
+            padding-left: 0;
+            margin-top: 1.5rem;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            justify-content: start;
+            h4{
+                margin-bottom: 0.25rem;
+                @include format-text($font-titles, $medium*1.058, 600);
+                letter-spacing: -0.02px;
+            }
+            .titulo-telefonos{
+                width: 100%;
+                h4{
+                    margin-bottom: 0.25rem;
+                    @include format-text($font-titles, $medium*1.058, 600);
+                    letter-spacing: -0.02px;
+                }
+                a{
+                    @include format-text($font-primary, $x-small, 400);
+                }
+            }
+            .list-inline{
+                padding-left: 0rem;
+                .phone-items{
+                    width: 100%;
+                    vertical-align: top;
+                    margin-top: 1rem;
+                    a{
+                        font-weight: 700;
+                        text-decoration: none;
+                        .phone-items--link{
+                            text-decoration: underline;
+                        }
+                        p{
+                            @include format-text($font-primary, $medium, 400);
+                            display: inline-block;
+                            margin-bottom: 0.25rem;
+                            color: $blanco;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .telefonos-redes__section--desktop-title{
+                display: none;
+            }
+            .redes__mobile__list{
+                display: block;
+                i{
+                    font-size: $large;
+                    margin-right: 1rem;
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 1rem;
+                }
+            }
+            .redes__desktop__list{
+                display: none;
+            }
+
+        }   
+    }
+    .footer-legal-section{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: start;
+        .footer-legal-section__desktop{
+            display: none;
+        }
+        .footer-license-text{
+            font-size: 0.7rem;
+        }
+        .legal-items{
+            margin-top: 1rem;
+            margin-left: 0;
+            li{
+                @include format-text($font-primary, $medium, 400);
+            }
+            li:last-child{
+                display: none;
+            }
+
+        }
+    }
+}
+@media screen and (min-width: 576px){
+    .headerCovid{
+        height: 600px;
+    }
+}
+@media screen and (min-width: 752px){
+    .headerCovid{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 768px){
+    .headerCovid{
+        height: 350px;
+        .breadcrumb{
+            margin-bottom: 1rem;
+        }
+        .headerCovid__cards{
+            .card{
+                .card-body{
+                    padding: 1.75rem 1rem;
+                    .card-text--mobile{
+                        display: none;
+                    }
+                    .card-text--desktop{
+                        display: block;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .consulta{
+        margin-top: 7rem;
+        .consulta__container{
+            padding: 2.5rem 0 0 2.5rem;
+            form{
+                width: 70%;
+                .consulta__text{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .servicios{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .escuelas{
+        display: none;
+    }
+    .informacion{
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .container{
+            p{
+                width: 55%;
+            }
+        }
+    }
+    .prevencion-sintomas{
+        margin-bottom: 3rem;
+        div{
+            margin-top: 0rem;
+            flex-basis: 50%;
+            .btn{
+                padding: 0.4rem 1rem;
+            }
+            ul{
+                width: 80%;
+            }
+            a{
+                margin-bottom: 0rem;
+            }
+        }
+    }
+    .informacion-oficial{
+        .container{
+            text-align: center;
+            .informacion-oficial__links{
+                padding-top: 1.5rem;
+                a{
+                    display: inline-block;
+                    padding: 0.5rem 1.5rem;
+                    text-decoration: none;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .main-footer{
+        padding-left: 0;
+        padding-right: 0;
+        .telefonos-redes{
+            flex-flow: row;
+            .telefonos-redes__section{
+                padding-left: 3rem;
+                flex-flow: row nowrap;
+                margin-top: 0;
+                h4{
+                    margin-bottom: 0.5rem;
+                    @include format-text($font-primary, $medium*1.13, 600);
+                }
+                .titulo-telefonos{
+                    width: 163px;
+                    h4{
+                        margin-bottom: 0.5rem;
+                        @include format-text($font-primary, $medium*1.13, 600);
+                    }
+                }
+                .list-inline{
+                    padding-left: 1.5rem;
+                    .phone-items{
+                        width: 80px;
+                        margin-top: 0;
+                        a{
+                            font-size: $medium*1.13;
+                            p{
+                                color: $greyText;
+                                @include format-text($font-primary, $small, 400);
+                                display: block;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .telefonos-redes__section--mobile-title{
+                    display: none;
+                }
+                .redes__mobile__list{
+                    display: none;
+                }
+                .telefonos-redes__section--desktop-title{
+                    display: block;
+                }
+                .redes__desktop__list{
+                    display: block;
+                }
+            }   
+        }
+        .footer-legal-section{
+            flex-flow: row;
+            justify-content: space-between;
+            .footer-legal-section__mobile{
+                display: none;
+            }
+            .footer-legal-section__desktop{
+                display: block;
+            }
+            .footer-license-text{
+                font-size: $xx-small;
+            }
+            .legal-items{
+                margin-top: 0;
+                li{
+                    font-weight: 600;
+                    font-size: $small;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                }
+                li:last-child{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    .headerCovid{
+        .headerCovid__title{
+            width: 712px;
+        }
+        .headerCovid__subtitle{
+            margin-bottom: 3.5rem;
+            width: 712px;
+        }
+    }
+    .consulta{
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+        .consulta__container{
+            height: 450px;
+            border-radius: 10px;
+            padding: 3.1rem 0 0 3.1rem;
+            background-position: 110% 600%;
+            form{
+                .consulta__text{
+                    margin-bottom: 2rem;
+                }
+                .form-wrapper{
+                    display: inline-block;
+                    width: 335px;
+                    margin-right: 1.5rem;
+                }
+                .contsulta__btn__container{
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    .servicios{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    .prevencion-sintomas{
+        margin-bottom: 4rem;
+        div{
+            ul{
+                width: 65%;
+            }
+        }
+    }   
+}
+@media screen and (min-width: 1200px){
+    .consulta{
+        .consulta__container{
+            height: 367px;
+            background-position: 110% -110%;
+        }
+    }
+    .consulta{
+        .consulta__container{
+            form{
+                width: 100%;
+                .consulta__text{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/*COLORS*/
+$blanco: #FFFFFF;
+$grisulado1: #F3F6F9;
+$grisulado90: #38485C;
+$celeste50: #007BC7;
+$grayBorders: #38485C33;
+$amarillo40: #FFDB2E;
+$celeste10: #F5F9FC;
+$grisulado5: #E6EBF0;
+$verdeAgua10: #CFFBE2;
+$grey: #8A98A8;
+$greyText: #AAAAAA;
+
+/*font-family*/
+$font-primary: 'Open Sans', sans-serif;
+$font-titles: 'Nunito', sans-serif;
+
+/*font-sizes*/
+$xx-small: 0.75rem; 
+$x-small: 0.8rem; 
+$small: 0.88rem; 
+$medium: 1rem;
+$m-large: 1.18rem; 
+$large: 1.3rem; 
+$xl: 1.7rem; 
+$xxl: 2.3rem; 
+
+@mixin format-text ($font-family, $font-size, $font-weight) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+@mixin principal-titles(){
+    font-family: $font-titles;
+    font-size: $xl;
+    font-weight: 600;
+    letter-spacing: -0.06px;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 768px){
+        margin-bottom: 1.5rem;
+    }
+}

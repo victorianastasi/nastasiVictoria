@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/*COLORS*/
+/*font-family*/
+/*font-sizes*/
+body {
+  background-color: #FFFFFF;
+  color: #38485C;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400; }
+
+.navbar.navbar-light {
+  border-bottom: none;
+  box-shadow: 0px 1px 3px #00000029; }
+  .navbar.navbar-light .header-logo {
+    width: inherit; }
+  .navbar.navbar-light .navbar-search:not(.active-search) .input-search {
+    box-shadow: none; }
+
+.headerCovid {
+  background-color: #F3F6F9;
+  height: 700px; }
+  .headerCovid .breadcrumb {
+    margin-bottom: 0.5rem; }
+  .headerCovid .headerCovid__update {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03px; }
+  .headerCovid .headerCovid__title {
+    font-family: "Nunito", sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    letter-spacing: -0.07px;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .headerCovid .headerCovid__subtitle {
+    font-size: 1.18rem;
+    letter-spacing: -0.02px;
+    margin-bottom: 1.5rem;
+    width: 100%; }
+  .headerCovid .headerCovid__cards .card {
+    border-left: 8px solid #FFDB2E;
+    box-shadow: 0px 1px 3px #38485C33; }
+    .headerCovid .headerCovid__cards .card .card-body {
+      padding: 1.35rem 1rem; }
+      .headerCovid .headerCovid__cards .card .card-body .card-title {
+        font-size: 1.3rem; }
+      .headerCovid .headerCovid__cards .card .card-body .card-text--desktop {
+        display: none; }
+
+.consulta {
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+  padding: 0; }
+  .consulta .consulta__container {
+    height: 735px;
+    background-color: #CFFBE2;
+    border-radius: 0px;
+    padding: 1.5rem 0.75rem;
+    background-image: url("../../img/phone-img.png");
+    background-repeat: no-repeat;
+    background-position: 60% 140%; }
+    .consulta .consulta__container form {
+      width: 100%; }
+      .consulta .consulta__container form legend {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600; }
+      .consulta .consulta__container form .consulta__text {
+        width: 100%;
+        margin-bottom: 1rem;
+        font-size: 1.18rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 400; }
+      .consulta .consulta__container form .form-wrapper {
+        width: 300px;
+        margin-right: 1rem; }
+        .consulta .consulta__container form .form-wrapper .form-control {
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          box-shadow: none; }
+      .consulta .consulta__container form .contsulta__btn__container {
+        margin-top: 1.5rem;
+        width: 110px;
+        height: 48px;
+        display: flex;
+        justify-content: center; }
+        .consulta .consulta__container form .contsulta__btn__container .consulta__btn {
+          font-weight: 700;
+          padding: 0;
+          position: relative;
+          height: 48px;
+          width: 110px;
+          transition: all 300ms; }
+          .consulta .consulta__container form .contsulta__btn__container .consulta__btn:before {
+            content: 'Consultar';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+          .consulta .consulta__container form .contsulta__btn__container .consulta__btn:hover {
+            width: 84px; }
+            .consulta .consulta__container form .contsulta__btn__container .consulta__btn:hover:before {
+              content: 'Botón'; }
+
+.servicios {
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
+  .servicios h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.06px;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 768px) {
+      .servicios h3 {
+        margin-bottom: 1.5rem; } }
+  .servicios .servicios__card .card-icon {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px; }
+    .servicios .servicios__card .card-icon img {
+      margin-bottom: 0.75rem; }
+  .servicios .servicios__card a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: -0.02px; }
+
+.escuelas .card {
+  border: 2px solid #E6EBF0;
+  box-shadow: none; }
+  .escuelas .card h4 {
+    font-size: 1.3rem; }
+
+.propuestas .card {
+  background-color: #F3F6F9;
+  border-radius: 12px;
+  margin-bottom: 1.5rem; }
+  .propuestas .card .card-body {
+    padding: 1.5rem; }
+    .propuestas .card .card-body a {
+      font-size: 1.3rem;
+      letter-spacing: -0.02px; }
+
+.informacion {
+  background-color: #F3F6F9;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .informacion .container h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.06px;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 768px) {
+      .informacion .container h3 {
+        margin-bottom: 1.5rem; } }
+  .informacion .container p {
+    letter-spacing: -0.02px;
+    width: 90%; }
+  .informacion .container .btn-wrapper .btn {
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem; }
+
+.prevencion-sintomas {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  justify-content: start;
+  color: #38485C;
+  margin-bottom: 2rem; }
+  .prevencion-sintomas div {
+    margin-top: 2rem;
+    flex-basis: 100%; }
+    .prevencion-sintomas div h3 {
+      font-family: "Nunito", sans-serif;
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: -0.06px;
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 768px) {
+        .prevencion-sintomas div h3 {
+          margin-bottom: 1.5rem; } }
+    .prevencion-sintomas div .prevencion-sintomas__subtitle {
+      font-size: 1.18rem;
+      letter-spacing: -0.02px;
+      margin-bottom: 1.5rem; }
+    .prevencion-sintomas div .btn {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1.5rem; }
+    .prevencion-sintomas div ul {
+      list-style: none;
+      width: 100%;
+      padding-left: 0.5rem; }
+      .prevencion-sintomas div ul li {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: start;
+        margin: 1.5rem 0; }
+        .prevencion-sintomas div ul li h5 {
+          font-family: "Nunito", sans-serif;
+          font-size: 1.058rem;
+          font-weight: 600; }
+    .prevencion-sintomas div a {
+      display: block;
+      padding-left: 0.5rem;
+      margin-bottom: 2rem; }
+
+.informacion-oficial {
+  background-color: #F3F6F9; }
+  .informacion-oficial .container {
+    text-align: center; }
+    .informacion-oficial .container h6 {
+      font-family: "Nunito", sans-serif;
+      font-size: 1.058rem;
+      font-weight: 700;
+      letter-spacing: -0.02px; }
+    .informacion-oficial .container .informacion-oficial__links {
+      padding-top: 1rem; }
+      .informacion-oficial .container .informacion-oficial__links a {
+        display: block;
+        text-align: left;
+        padding: 1rem;
+        text-decoration: none;
+        font-weight: 600; }
+
+.main-footer {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; }
+  .main-footer .telefonos-redes {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #FFFFFF; }
+    .main-footer .telefonos-redes .telefonos-redes__section {
+      padding-left: 0;
+      margin-top: 1.5rem;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: start; }
+      .main-footer .telefonos-redes .telefonos-redes__section h4 {
+        margin-bottom: 0.25rem;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.058rem;
+        font-weight: 600;
+        letter-spacing: -0.02px; }
+      .main-footer .telefonos-redes .telefonos-redes__section .titulo-telefonos {
+        width: 100%; }
+        .main-footer .telefonos-redes .telefonos-redes__section .titulo-telefonos h4 {
+          margin-bottom: 0.25rem;
+          font-family: "Nunito", sans-serif;
+          font-size: 1.058rem;
+          font-weight: 600;
+          letter-spacing: -0.02px; }
+        .main-footer .telefonos-redes .telefonos-redes__section .titulo-telefonos a {
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.8rem;
+          font-weight: 400; }
+      .main-footer .telefonos-redes .telefonos-redes__section .list-inline {
+        padding-left: 0rem; }
+        .main-footer .telefonos-redes .telefonos-redes__section .list-inline .phone-items {
+          width: 100%;
+          vertical-align: top;
+          margin-top: 1rem; }
+          .main-footer .telefonos-redes .telefonos-redes__section .list-inline .phone-items a {
+            font-weight: 700;
+            text-decoration: none; }
+            .main-footer .telefonos-redes .telefonos-redes__section .list-inline .phone-items a .phone-items--link {
+              text-decoration: underline; }
+            .main-footer .telefonos-redes .telefonos-redes__section .list-inline .phone-items a p {
+              font-family: "Open Sans", sans-serif;
+              font-size: 1rem;
+              font-weight: 400;
+              display: inline-block;
+              margin-bottom: 0.25rem;
+              color: #FFFFFF;
+              text-decoration: underline; }
+      .main-footer .telefonos-redes .telefonos-redes__section .telefonos-redes__section--desktop-title {
+        display: none; }
+      .main-footer .telefonos-redes .telefonos-redes__section .redes__mobile__list {
+        display: block; }
+        .main-footer .telefonos-redes .telefonos-redes__section .redes__mobile__list i {
+          font-size: 1.3rem;
+          margin-right: 1rem; }
+        .main-footer .telefonos-redes .telefonos-redes__section .redes__mobile__list img {
+          width: 20px;
+          height: 20px;
+          margin-right: 1rem; }
+      .main-footer .telefonos-redes .telefonos-redes__section .redes__desktop__list {
+        display: none; }
+  .main-footer .footer-legal-section {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: start; }
+    .main-footer .footer-legal-section .footer-legal-section__desktop {
+      display: none; }
+    .main-footer .footer-legal-section .footer-license-text {
+      font-size: 0.7rem; }
+    .main-footer .footer-legal-section .legal-items {
+      margin-top: 1rem;
+      margin-left: 0; }
+      .main-footer .footer-legal-section .legal-items li {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 400; }
+      .main-footer .footer-legal-section .legal-items li:last-child {
+        display: none; }
+
+@media screen and (min-width: 576px) {
+  .headerCovid {
+    height: 600px; } }
+
+@media screen and (min-width: 752px) {
+  .headerCovid {
+    height: 400px; } }
+
+@media screen and (min-width: 768px) {
+  .headerCovid {
+    height: 350px; }
+    .headerCovid .breadcrumb {
+      margin-bottom: 1rem; }
+    .headerCovid .headerCovid__cards .card .card-body {
+      padding: 1.75rem 1rem; }
+      .headerCovid .headerCovid__cards .card .card-body .card-text--mobile {
+        display: none; }
+      .headerCovid .headerCovid__cards .card .card-body .card-text--desktop {
+        display: block;
+        margin-bottom: 0; }
+  .consulta {
+    margin-top: 7rem; }
+    .consulta .consulta__container {
+      padding: 2.5rem 0 0 2.5rem; }
+      .consulta .consulta__container form {
+        width: 70%; }
+        .consulta .consulta__container form .consulta__text {
+          width: 70%; }
+  .servicios {
+    padding-top: 1rem;
+    padding-bottom: 2rem; }
+  .escuelas {
+    display: none; }
+  .informacion {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    .informacion .container p {
+      width: 55%; }
+  .prevencion-sintomas {
+    margin-bottom: 3rem; }
+    .prevencion-sintomas div {
+      margin-top: 0rem;
+      flex-basis: 50%; }
+      .prevencion-sintomas div .btn {
+        padding: 0.4rem 1rem; }
+      .prevencion-sintomas div ul {
+        width: 80%; }
+      .prevencion-sintomas div a {
+        margin-bottom: 0rem; }
+  .informacion-oficial .container {
+    text-align: center; }
+    .informacion-oficial .container .informacion-oficial__links {
+      padding-top: 1.5rem; }
+      .informacion-oficial .container .informacion-oficial__links a {
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        font-weight: 400; }
+  .main-footer {
+    padding-left: 0;
+    padding-right: 0; }
+    .main-footer .telefonos-redes {
+      flex-flow: row; }
+      .main-footer .telefonos-redes .telefonos-redes__section {
+        padding-left: 3rem;
+        flex-flow: row nowrap;
+        margin-top: 0; }
+        .main-footer .telefonos-redes .telefonos-redes__section h4 {
+          margin-bottom: 0.5rem;
+          font-family: "Open Sans", sans-serif;
+          font-size: 1.13rem;
+          font-weight: 600; }
+        .main-footer .telefonos-redes .telefonos-redes__section .titulo-telefonos {
+          width: 163px; }
+          .main-footer .telefonos-redes .telefonos-redes__section .titulo-telefonos h4 {
+            margin-bottom: 0.5rem;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.13rem;
+            font-weight: 600; }
+        .main-footer .telefonos-redes .telefonos-redes__section .list-inline {
+          padding-left: 1.5rem; }
+          .main-footer .telefonos-redes .telefonos-redes__section .list-inline .phone-items {
+            width: 80px;
+            margin-top: 0; }
+            .main-footer .telefonos-redes .telefonos-redes__section .list-inline .phone-items a {
+              font-size: 1.13rem; }
+              .main-footer .telefonos-redes .telefonos-redes__section .list-inline .phone-items a p {
+                color: #AAAAAA;
+                font-family: "Open Sans", sans-serif;
+                font-size: 0.88rem;
+                font-weight: 400;
+                display: block;
+                text-decoration: none; }
+        .main-footer .telefonos-redes .telefonos-redes__section .telefonos-redes__section--mobile-title {
+          display: none; }
+        .main-footer .telefonos-redes .telefonos-redes__section .redes__mobile__list {
+          display: none; }
+        .main-footer .telefonos-redes .telefonos-redes__section .telefonos-redes__section--desktop-title {
+          display: block; }
+        .main-footer .telefonos-redes .telefonos-redes__section .redes__desktop__list {
+          display: block; }
+    .main-footer .footer-legal-section {
+      flex-flow: row;
+      justify-content: space-between; }
+      .main-footer .footer-legal-section .footer-legal-section__mobile {
+        display: none; }
+      .main-footer .footer-legal-section .footer-legal-section__desktop {
+        display: block; }
+      .main-footer .footer-legal-section .footer-license-text {
+        font-size: 0.75rem; }
+      .main-footer .footer-legal-section .legal-items {
+        margin-top: 0; }
+        .main-footer .footer-legal-section .legal-items li {
+          font-weight: 600;
+          font-size: 0.88rem;
+          margin-right: 0.5rem;
+          margin-left: 0.5rem; }
+        .main-footer .footer-legal-section .legal-items li:last-child {
+          display: inline-block; } }
+
+@media screen and (min-width: 1024px) {
+  .headerCovid .headerCovid__title {
+    width: 712px; }
+  .headerCovid .headerCovid__subtitle {
+    margin-bottom: 3.5rem;
+    width: 712px; }
+  .consulta {
+    margin-top: 7rem;
+    margin-bottom: 4rem; }
+    .consulta .consulta__container {
+      height: 450px;
+      border-radius: 10px;
+      padding: 3.1rem 0 0 3.1rem;
+      background-position: 110% 600%; }
+      .consulta .consulta__container form .consulta__text {
+        margin-bottom: 2rem; }
+      .consulta .consulta__container form .form-wrapper {
+        display: inline-block;
+        width: 335px;
+        margin-right: 1.5rem; }
+      .consulta .consulta__container form .contsulta__btn__container {
+        margin-top: 1rem; }
+  .servicios {
+    padding-top: 2rem;
+    padding-bottom: 3rem; }
+  .prevencion-sintomas {
+    margin-bottom: 4rem; }
+    .prevencion-sintomas div ul {
+      width: 65%; } }
+
+@media screen and (min-width: 1200px) {
+  .consulta .consulta__container {
+    height: 367px;
+    background-position: 110% -110%; }
+  .consulta .consulta__container form {
+    width: 100%; }
+    .consulta .consulta__container form .consulta__text {
+      width: 50%; } }
